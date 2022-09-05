@@ -1,0 +1,29 @@
+.section-about {
+  background-color: $color-grey-f7;
+  padding: 25rem 0;
+  margin-top: -30vh;
+
+  &__description {
+    display: flex;
+    justify-content: space-around;
+
+    .descriptions {
+      width: 65rem;
+    }
+  }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+      margin-bottom: 3rem;
+    }
+  }
+}
+
