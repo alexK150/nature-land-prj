@@ -1,0 +1,23 @@
+{
+  "name": "first-land-prj",
+  "version": "1.0.0",
+  "description": "landing project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexK150/nature-land-prj.git"
+  },
+  "author": "AlexK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexK150/nature-land-prj/issues"
+  },
+  "homepage": "https://github.com/alexK150/nature-land-prj#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
