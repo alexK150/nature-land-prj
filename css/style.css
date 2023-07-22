@@ -137,6 +137,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.74), #28b485), url("../img/hero.svg");
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   position: relative; }
   .header__logo-box {
