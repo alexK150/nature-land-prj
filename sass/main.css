@@ -669,6 +669,9 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
 }
 .burger-menu__background {
   height: 6rem;
@@ -679,15 +682,17 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
-  transform: scale(70);
+  transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
 }
 .burger-menu__nav {
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: width 0.8s, opacity 0.2s ease;
 }
 .burger-menu__list {
   position: absolute;
@@ -696,6 +701,7 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
+  width: 100%;
 }
 .burger-menu__item {
   margin: 1rem;
@@ -716,6 +722,52 @@ body {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem);
+}
+.burger-menu__checkbox:checked ~ .burger-menu__background {
+  transform: scale(70);
+}
+.burger-menu__checkbox:checked ~ .burger-menu__nav {
+  opacity: 1;
+  width: 100%;
+}
+.burger-menu__icon {
+  position: relative;
+  margin-top: 3.5rem;
+}
+.burger-menu__icon, .burger-menu__icon::before, .burger-menu__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #333;
+  display: inline-block;
+}
+.burger-menu__icon::before, .burger-menu__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.burger-menu__icon::before {
+  top: -0.8rem;
+}
+.burger-menu__icon::after {
+  top: 0.8rem;
+}
+.burger-menu__btn:hover .burger-menu__icon::before {
+  top: -1rem;
+}
+.burger-menu__btn:hover .burger-menu__icon::after {
+  top: 1rem;
+}
+.burger-menu__checkbox:checked + .burger-menu__btn .burger-menu__icon {
+  background-color: transparent;
+}
+.burger-menu__checkbox:checked + .burger-menu__btn .burger-menu__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.burger-menu__checkbox:checked + .burger-menu__btn .burger-menu__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .section-features {
