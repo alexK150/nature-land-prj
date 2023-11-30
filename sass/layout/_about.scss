@@ -3,6 +3,16 @@
   padding: 25rem 0;
   margin-top: -30vh;
 
+  @include respond(tab-land){
+    display: flex;
+    flex-direction: column;
+
+    &--row {
+      width: 70vw;
+      align-self: center !important;
+    }
+  }
+
   &__description {
     display: flex;
     justify-content: space-around;

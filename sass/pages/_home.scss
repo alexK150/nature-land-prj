@@ -5,6 +5,12 @@
   transform: skewY(-6deg);
   margin-top: -10rem;
 
+  @include respond(tab-land){
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+  }
+
   & > * {
     transform: skewY(6deg);
   }

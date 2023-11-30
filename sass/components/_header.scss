@@ -46,6 +46,10 @@
     animation-name: moveFromRight;
     animation-duration: 2s;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+    }
   }
   &--main {
     display: block;
@@ -54,5 +58,10 @@
     letter-spacing: 3.5rem;
     animation-name: moveFromLeft;
     animation-duration: 2s;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 }
