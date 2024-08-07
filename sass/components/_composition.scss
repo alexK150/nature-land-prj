@@ -1,6 +1,11 @@
 .picture {
   width: 40%;
 
+  @include respond(tab-land){
+    width: 90%;
+    margin-top: 5rem;
+  }
+
   .composition {
     position: relative;
 

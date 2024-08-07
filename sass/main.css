@@ -234,6 +234,12 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   position: relative;
 }
+@media (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+}
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -295,6 +301,12 @@ body {
 
 .picture {
   width: 40%;
+}
+@media (max-width: 75em) {
+  .picture {
+    width: 90%;
+    margin-top: 5rem;
+  }
 }
 .picture .composition {
   position: relative;
@@ -754,14 +766,20 @@ body {
   .section-about--row {
     width: 70vw;
     align-self: center !important;
+    height: 61rem;
   }
 }
 .section-about__description {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 75em) {
+  .section-about__description {
+    display: block;
+  }
+}
 .section-about__description .descriptions {
-  width: 65rem;
+  width: 100%;
 }
 .section-about .heading-tertiary {
   font-size: 1.6rem;
@@ -784,6 +802,11 @@ body {
   font-size: 1.4rem;
   color: #eee;
 }
+@media (max-width: 37.5em) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer__logo-box {
   display: flex;
   justify-content: center;
@@ -800,8 +823,26 @@ body {
   margin: 0 auto;
   width: 75%;
 }
+@media (max-width: 37.5em) {
+  .footer__description {
+    display: block;
+    width: 100%;
+    padding: 0;
+    max-width: 80vw !important;
+  }
+}
 .footer__left-container, .footer__right-container {
   width: 45%;
+}
+@media (max-width: 37.5em) {
+  .footer__left-container, .footer__right-container {
+    width: 100%;
+  }
+}
+@media (max-width: 37.5em) {
+  .footer__right-container {
+    margin-top: 5rem;
+  }
 }
 .footer__navigation {
   border-top: 1px solid #f7f7f7;
@@ -856,6 +897,18 @@ body {
   text-align: center;
   cursor: pointer;
 }
+@media (max-width: 56.25em) {
+  .burger-menu__btn {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .burger-menu__btn {
+    top: 3rem;
+    right: 3rem;
+  }
+}
 .burger-menu__background {
   height: 6rem;
   width: 6rem;
@@ -866,6 +919,18 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+}
+@media (max-width: 56.25em) {
+  .burger-menu__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .burger-menu__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
 }
 .burger-menu__nav {
   height: 100vh;

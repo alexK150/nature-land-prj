@@ -10,6 +10,7 @@
     &--row {
       width: 70vw;
       align-self: center !important;
+      height: 61rem;
     }
   }
 
@@ -17,8 +18,12 @@
     display: flex;
     justify-content: space-around;
 
+    @include respond(tab-land) {
+      display: block;
+    }
+
     .descriptions {
-      width: 65rem;
+      width: 100%;
     }
   }
 
