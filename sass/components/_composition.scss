@@ -1,5 +1,6 @@
 .picture {
   width: 40%;
+  padding: 0 5rem;
 
   @include respond(tab-land){
     width: 90%;

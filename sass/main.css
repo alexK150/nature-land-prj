@@ -239,6 +239,8 @@ body {
   .header {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    height: 60vh;
+    margin-bottom: 10rem;
   }
 }
 .header__logo-box {
@@ -247,7 +249,7 @@ body {
   left: 4rem;
 }
 .header__logo {
-  height: 3.5rem;
+  height: 7rem;
 }
 .header__text {
   position: absolute;
@@ -302,6 +304,7 @@ body {
 
 .picture {
   width: 40%;
+  padding: 0 5rem;
 }
 @media (max-width: 75em) {
   .picture {
@@ -880,6 +883,7 @@ body {
 }
 .section-about__description .descriptions {
   width: 100%;
+  padding: 0 5rem;
 }
 .section-about .heading-tertiary {
   font-size: 1.6rem;
@@ -1140,6 +1144,7 @@ body {
   background-color: #f7f7f7;
   margin-top: -10rem;
   padding-top: 25rem;
+  padding-bottom: 10rem;
 }
 
 .section-feedback {
